@@ -1,0 +1,28 @@
+{
+  /**\
+    tsconfig.json 是ts 编译器的配置文件
+*/
+  //  指定哪些 ts文件需要被编译
+  "include": ["../compiler/**/*"],
+  //   指定排除选定的ts 文件，不被编译
+  "exclude": ["./hello/**/*"],
+  // 编译器选项
+  "compilerOptions": {
+      "target": "ES2020" , //指定ts 编译的Es 版本 可传入一个错误值运行查看可选版本
+      "module": "System" , //模块化规范
+      //"lib": ["ES6","DOM"] , //指定运行时所包含的库
+      "outDir": "../compiler/build", //指定编译后文件所在的目录
+      // "outFile": "../compiler/build/app.js" , //指定合并为一个文件， 所有全局作用域中代码会合并到同一个文件
+      "allowJs": true ,//允许对 js 文件进行编译 ， 默认 false
+      "checkJs": false ,//是否检查js代码语法规范
+      "removeComments": true, //是否删除注释
+      "noEmit": false , //不生成编译后文件
+      "noEmitOnError": false , //有错误不生成编译后文件
+      "alwaysStrict": true , // 严格模式
+      "noImplicitAny": false ,// 不允许隐式的any
+      "noImplicitThis": false , //不允许明确类型的this
+      "strictNullChecks": false , //严格的空检查
+      "strict": false //严格检查的总开关
+    }
+}
+ 
