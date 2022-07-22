@@ -1,0 +1,8 @@
+{
+  // 编译器选项
+  "compilerOptions": {
+    "module": "ES2015",
+    "target": "ES2015", //指定ts 编译的Es 版本 可传入一个错误值运行查看可选版本
+    "strict": true
+  }
+}
